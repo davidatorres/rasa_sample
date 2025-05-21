@@ -1,0 +1,15 @@
+[project]
+name = "rasa-sample"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rasa",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+rasa = { path = "../rasa", editable = true }
