@@ -1,15 +1,18 @@
-[project]
+[tool.poetry]
 name = "rasa-sample"
 version = "0.1.0"
-description = "Add your description here"
+description = ""
+authors = ["David Torres <davidtorres@microsoft.com>"]
 readme = "README.md"
-requires-python = ">=3.10"
-dependencies = [
-    "rasa",
-]
+package-mode = false
 
-[tool.uv]
-package = false
+[tool.poetry.dependencies]
+python = "~3.10"
 
-[tool.uv.sources]
-rasa = { path = "../rasa", editable = true }
+[tool.poetry.dependencies.rasa]
+path = "../rasa"
+develop = true
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

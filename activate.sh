@@ -1,0 +1,1 @@
+source /home/davidtorres/.cache/pypoetry/virtualenvs/rasa-sample-Xm2XWtbB-py3.10/bin/activate

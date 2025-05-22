@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "rasa_sample",
+			"path": "."
+		},
+		{
+			"name": "rasa",
+			"path": "../rasa"
+		}		
+	],
+	"settings": {}
+}
