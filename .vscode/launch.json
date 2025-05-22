@@ -1,0 +1,43 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+		{
+			"name": "rasa-attach",
+			"type": "debugpy",
+			"request": "attach",
+			"connect": {
+				"host": "localhost",
+				"port": 5678
+			}
+		},		
+		{
+			"name": "rasa-shell",
+			"type": "debugpy",
+			"request": "launch",
+			"module": "rasa",
+			"args": [
+				"shell"
+			],
+            "cwd": "${workspaceFolder}/dialog_manager" // Set the working directory
+		},        
+		{
+			"name": "rasa-train",
+			"type": "debugpy",
+			"request": "launch",
+			"module": "rasa",
+			"args": [
+				"train"
+			],
+            "cwd": "${workspaceFolder}/dialog_manager" // Set the working directory
+		},             
+        {
+            "name": "Python Debugger: Python File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}"
+        }
+    ]
+}
